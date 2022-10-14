@@ -1,0 +1,120 @@
+.g-normalForm {
+  padding: 0 20px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-size: 0;
+  background-color: #fff;
+  border-bottom: 2px solid #ebeef5;
+
+  .m-item {
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    align-items: top;
+    width: 100%;
+    padding: 36px 0;
+    border-bottom: 2px solid #ebeef5;
+
+    &.f-upload {
+      flex-direction: column;
+      .u-label {
+        flex: 0 0 50px;
+      }
+      .m-content {
+        left: -14px;
+      }
+    }
+
+    &.f-textarea {
+      align-items: flex-start;
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+    .u-label {
+      flex: 0 0 150px;
+      position: relative;
+      width: 150px;
+      font-size: 28px;
+      color: #808DA1;
+      line-height: 48px;
+      &.f-required {
+        &::before {
+          position: absolute;
+          top: -16px;
+          left: -8px;
+          font-size: 24px;
+          color: red;
+          content: '*';
+        }
+      }
+    }
+
+    .m-content {
+      position: relative;
+      display: flex;
+      align-items: center;
+      flex: 1;
+      min-height: 48px;
+      font-size: 32px;
+      line-height: 48px;
+      color: #303133;
+      .u-text {
+        font-size: 28px;
+        word-break: break-all;
+      }
+
+      .u-input {
+        width: 100%;
+      }
+
+      .u-switch {
+        position: absolute;
+        right: 0;
+      }
+
+      .u-number {
+      }
+
+      .u-textarea {
+        width: 100%;
+        padding-top: 14px;
+
+        .taro-textarea {
+          font-size: 32px;
+        }
+      }
+
+      .u-placeholder {
+        position: absolute;
+        top: 8px;
+        left: 0;
+      }
+
+      .u-placeholder,
+      .input-placeholder {
+        font-size: 28px;
+        line-height: 48px;
+        color: #909399;
+      }
+
+      .m-select {
+        width: 100%;
+        .u-value {
+          display: inline-block;
+          vertical-align: middle;
+          &.f-placeholder {
+            font-size: 32px;
+            line-height: 48px;
+            color: #909399;
+          }
+        }
+
+        .u-arrow-icon {
+          float: right;
+          font-size: 48px;
+        }
+      }
+    }
+  }
+}

@@ -10,7 +10,7 @@ const config = {
     375: 2,
   },
   sourceRoot: "src",
-  outputRoot: process.env.APP_ENV === "zlb" ? "build" : "dist",
+  outputRoot: "dist",
   plugins: [],
   defineConstants: {},
   copy: {
@@ -18,10 +18,6 @@ const config = {
     options: {}
   },
   framework: "react",
-  defineConstants: {
-    "process.env.APP_ENV": JSON.stringify(process.env.APP_ENV),
-    "process.env.RUN_ENV": JSON.stringify(process.env.RUN_ENV)
-  },
   alias: {
     "@": path.resolve(__dirname, "..", "src")
   },
@@ -48,7 +44,7 @@ const config = {
   },
   h5: {
     esnextModules: ["taro-ui"],
-    publicPath: process.env.APP_ENV === "zlb" ? "./" : "/",
+    // publicPath: process.env.APP_ENV === "zlb" ? "./" : "/",
     staticDirectory: "static",
     postcss: {
       autoprefixer: {

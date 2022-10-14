@@ -1,35 +1,16 @@
 {
-  "name": "xnwlsq",
-  "version": "1.0.23",
+  "name": "weapp",
+  "version": "1.0.0",
   "private": true,
-  "description": "武义社区",
+  "description": "微信小程序脚手架",
   "templateInfo": {
     "name": "default",
     "typescript": true,
     "css": "less"
   },
   "scripts": {
-    "build": "cross-env APP_ENV=zlb RUN_ENV=test taro build --type h5",
     "build:weapp": "taro build --type weapp",
-    "build:swan": "taro build --type swan",
-    "build:alipay": "taro build --type alipay",
-    "build:tt": "taro build --type tt",
-    "build:h5": "taro build --type h5",
-    "build:rn": "taro build --type rn",
-    "build:qq": "taro build --type qq",
-    "build:jd": "taro build --type jd",
-    "build:quickapp": "taro build --type quickapp",
-    "dev:weapp": "cross-env RUN_ENV=test npm run build:weapp -- --watch",
-    "dev:weapp:prod": "cross-env RUN_ENV=prod npm run build:weapp -- --watch",
-    "dev:swan": "npm run build:swan -- --watch",
-    "dev:alipay": "npm run build:alipay -- --watch",
-    "dev:tt": "npm run build:tt -- --watch",
-    "dev:h5": "cross-env APP_ENV=h5 RUN_ENV=test npm run build:h5 -- --watch",
-    "dev:h5:prod": "cross-env RUN_ENV=prod npm run build:h5 -- --watch",
-    "dev:rn": "npm run build:rn -- --watch",
-    "dev:qq": "npm run build:qq -- --watch",
-    "dev:jd": "npm run build:jd -- --watch",
-    "dev:quickapp": "npm run build:quickapp -- --watch",
+    "dev:weapp": "npm run build:weapp -- --watch",
     "mock": "mocker ./mock/api.ts --port 3721",
     "build:fie": "fie pack"
   },
@@ -55,7 +36,7 @@
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
     "taro-code": "^3.5.2",
-    "taro-ui": "^3.1.0-beta.2"
+    "taro-ui": "3.1.0-beta.2"
   },
   "devDependencies": {
     "@babel/core": "^7.8.0",

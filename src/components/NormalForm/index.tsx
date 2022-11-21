@@ -13,7 +13,7 @@ import {
   PickerTimeProps,
 } from '@tarojs/components/types/Picker';
 import { SwitchProps } from '@tarojs/components/types/Switch';
-import ImageSelect from '@/components/PersonSelect/index';
+import ImageSelect from '@/components/ImgSelect/index';
 
 type INFormType =
   | 'text'
